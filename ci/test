@@ -7,9 +7,15 @@ set -eo pipefail
 
 # Copy Dockerfile-template to Dockerfile
 cp Dockerfile-template Dockerfile
+wait
 
 # Fill in the Debian suite in the Dockerfile
 bin/replace_sif '<SUITE>' "$SUITE" Dockerfile
+wait
+
+echo '**************************'
+cat Dockerfile
+echo '**************************'
 
 # Executing the Dockerfile
 echo '#####################'
