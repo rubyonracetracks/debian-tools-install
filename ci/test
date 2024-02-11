@@ -5,6 +5,8 @@
 # as succeeding in spite of errors or failures.
 set -eo pipefail
 
+echo "Debian suite in use: $SUITE"
+
 # Copy Dockerfile-template to Dockerfile
 cp Dockerfile-template Dockerfile
 wait
