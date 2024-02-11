@@ -38,3 +38,5 @@ jobs:
       - name: Print the Debian suite in use
         run: ci/echo-suite
 
+      - name: Run the test script
+        run: ci/test
