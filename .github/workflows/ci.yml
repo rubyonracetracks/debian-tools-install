@@ -35,6 +35,5 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
-      - name: Print the Debian suite in use
-        run: ci/echo-suite
-
+      - name: Run the test script
+        run: ci/test
